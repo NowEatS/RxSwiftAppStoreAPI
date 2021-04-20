@@ -36,8 +36,8 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(false, animated: false)
-        
         guard let searchResult = searchResult else { return }
+        navigationItem.title = searchResult.trackName
         
         guard let musicURL = URL(string: searchResult.previewUrl) else{ return }
         
