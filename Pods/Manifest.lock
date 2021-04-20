@@ -1,4 +1,5 @@
 PODS:
+  - Kingfisher (6.2.1)
   - RxCocoa (6.1.0):
     - RxRelay (= 6.1.0)
     - RxSwift (= 6.1.0)
@@ -7,20 +8,23 @@ PODS:
   - RxSwift (6.1.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - RxCocoa
   - RxSwift
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - RxCocoa
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
 
-PODFILE CHECKSUM: c47c16796793b9fde62de64acb22a66a27b88ce3
+PODFILE CHECKSUM: de8c5a9f71b22b2488fc9db7e53b2546e42233b9
 
 COCOAPODS: 1.9.1

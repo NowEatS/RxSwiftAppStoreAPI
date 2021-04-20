@@ -17,6 +17,8 @@
 		F3696679262C907500F8CB76 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3696678262C907500F8CB76 /* AppCoordinator.swift */; };
 		F369667E262DDB2D00F8CB76 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369667D262DDB2D00F8CB76 /* SearchViewModel.swift */; };
 		F3696681262DDF2300F8CB76 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3696680262DDF2300F8CB76 /* SearchResult.swift */; };
+		F3696689262F30AD00F8CB76 /* SearchResultListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3696688262F30AD00F8CB76 /* SearchResultListCell.swift */; };
+		F3696692262F3A7900F8CB76 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3696691262F3A7900F8CB76 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F3696678262C907500F8CB76 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ../../AppCoordinator.swift; sourceTree = "<group>"; };
 		F369667D262DDB2D00F8CB76 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		F3696680262DDF2300F8CB76 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		F3696688262F30AD00F8CB76 /* SearchResultListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultListCell.swift; sourceTree = "<group>"; };
+		F3696691262F3A7900F8CB76 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 				F369665D262C8E1B00F8CB76 /* AppDelegate.swift */,
 				F369665F262C8E1B00F8CB76 /* SceneDelegate.swift */,
 				F3696661262C8E1B00F8CB76 /* SearchViewController.swift */,
+				F3696688262F30AD00F8CB76 /* SearchResultListCell.swift */,
 				F3696663262C8E1B00F8CB76 /* Main.storyboard */,
+				F3696691262F3A7900F8CB76 /* DetailViewController.swift */,
 				F3696666262C8E1C00F8CB76 /* Assets.xcassets */,
 				F3696668262C8E1C00F8CB76 /* LaunchScreen.storyboard */,
 				F369666B262C8E1C00F8CB76 /* Info.plist */,
@@ -220,6 +226,8 @@
 				F369665E262C8E1B00F8CB76 /* AppDelegate.swift in Sources */,
 				F3696681262DDF2300F8CB76 /* SearchResult.swift in Sources */,
 				F3696660262C8E1B00F8CB76 /* SceneDelegate.swift in Sources */,
+				F3696689262F30AD00F8CB76 /* SearchResultListCell.swift in Sources */,
+				F3696692262F3A7900F8CB76 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
