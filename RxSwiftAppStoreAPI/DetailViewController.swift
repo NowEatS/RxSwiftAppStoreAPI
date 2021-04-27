@@ -15,7 +15,8 @@ class DetailViewController: UIViewController {
     @IBOutlet var albumImageView: UIImageView!
     @IBOutlet var playButton: UIButton!
     
-    private var player: AVAudioPlayer?
+    private var player: AVPlayer = AVPlayer()
+    private var isPlay = false
     private let disposeBag = DisposeBag()
     
     var searchResult: MusicSearchResult?
@@ -40,13 +41,10 @@ class DetailViewController: UIViewController {
         navigationItem.title = searchResult.trackName
         
         guard let musicURL = URL(string: searchResult.previewUrl) else{ return }
+        let item = AVPlayerItem(url: musicURL)
+        player.replaceCurrentItem(with: item)
         
-        do {
-            player = try AVAudioPlayer(contentsOf: musicURL)
-            bindUI()
-        } catch {
-            print("플레이어 생성 실패")
-        }
+        bindUI()
         
         guard let imageURL = URL(string: searchResult.artworkUrl100) else { return }
         albumImageView.kf.setImage(with: imageURL)
@@ -66,13 +64,14 @@ class DetailViewController: UIViewController {
     }
     
     private func tapPlayButton() {
-        guard let player = player else { return }
-        if player.isPlaying {
-            player.stop()
-            playButton.setImage(UIImage(named: "play.fill"), for: .normal)
+        if isPlay {
+            player.pause()
+            playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            isPlay = false
         } else {
             player.play()
-            playButton.setImage(UIImage(named: "pause.fill"), for: .normal)
+            playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            isPlay = true
         }
     }
 }
